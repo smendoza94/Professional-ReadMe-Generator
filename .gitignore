@@ -1,3 +1,10 @@
+# Project required .gitignore ------------
+node_modules
+package-lock.json
+.vscode
+.DS_Store
+
+# GitHub .gitignore Node Template ----------- 
 # Logs
 logs
 *.log
