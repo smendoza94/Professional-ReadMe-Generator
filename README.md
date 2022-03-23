@@ -1,8 +1,8 @@
 # Professional-ReadMe-Generator
-Quickly and easily generate a README file by using a command-line application to generate one.[^1][^2]
+Quickly and easily generate a README file by using a command-line application to generate one.[^1][^2][^3][^4]
 
 ## Instructions
-This is a ***Node.js application***, therefore you must have Node downloaded on your local PC. FOLLOW THIS LINK FOR A VIDEO WALKTHROUGH: [Install & Usage of Pro ReadMe.md Generator](https://).
+This is a ***Node.js application***, therefore you must have Node downloaded on your local PC. FOLLOW THIS LINK FOR A VIDEO WALKTHROUGH: [Install & Usage of Pro ReadMe.md Generator Video](https://).
 1. Download the repo onto your local device
 2. use the terminal to navigate to the directory (folder) that contains 'index.js'
 3. in ther terminal, run `$node index.js`
@@ -24,7 +24,7 @@ This is a ***Node.js application***, therefore you must have Node downloaded on 
   6. Contributing, 
   7. Tests, 
   8. and Questions
-  9. 
+
 - [ ] WHEN I enter my project title, THEN this is displayed as the title of the README
 
 - [ ] WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions, THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
@@ -40,3 +40,5 @@ This is a ***Node.js application***, therefore you must have Node downloaded on 
 #Resources & References
 [^1]: [Professional README Guide](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide). Request-Response: The Full-Stack Blog. 20 March 2022.  
 [^2]: [Basic Writing and Formatting Syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax). GitHub Docs. 20 March 2022.
+[^3]: [MIT License][Apache License 2.0][GNU General Public License v3.0](https://choosealicense.com/licenses/mit/). Choose A License. 22 March 2022.
+[^4]: [License](https://shields.io/category/license). ShieldsIO. 22 March 2022.
