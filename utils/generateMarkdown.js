@@ -1,6 +1,14 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+function renderLicenseBadge(license) {
+  if (license === 'MIT License') {
+    return '![License Badge](https://img.shields.io/static/v1?label=License&message=MIT&color=success)'
+  } else if (license === 'Apache License 2.0') {
+    return '![License Badge](https://img.shields.io/static/v1?label=License&message=Apache&color=success)'
+  } else if (license === 'GNU General Public License v3.0') {
+    return '![License Badge](https://img.shields.io/static/v1?label=License&message=GNU&color=success)'
+  }
+} 
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
@@ -14,17 +22,10 @@ function renderLicenseSection(license) {}
 function generateMarkdown(data) {
   return `
     # ${data.title}
-    ![License Badge](https://img.shields.io/static/v1?label=License&message=${data.badge}&color=success)
+    ${renderLicenseBadge(data.license)}
 
     ## Description 
     ${data.description}
-    
-    Provide a short description explaining the what, why, and how of your project. 
-    Use the following questions as a guide:
-    - What was your motivation?
-    - Why did you build this project?
-    - What problem does it solve?
-    - What did you learn?
     
     ## Table of Contents
     - [Installation](#installation)
@@ -36,27 +37,19 @@ function generateMarkdown(data) {
     
     ## Installation
     ${data.installation}
-    What are the steps required to install your project? 
-    Provide a step-by-step description of how to get the development environment running.
     
     ## Usage
     ${data.usage}
-    Provide instructions and examples for use. Include screenshots as needed.
     ![Usage Image](${data.usageImg})
     
     ## Contributing
-    [${data.collaborator}](${data.collabGitHub})
-    List your collaborators, if any, with links to their GitHub profiles.
-    If you used any third-party assets that require attribution, 
-    list the creators with links to their primary web presence in this section.
-    If you followed tutorials, include links to those here as well.
+    [${data.collaborator}](https://github.com/${data.collaborator})
     
     ## Tests
     ${data.tests}
-    Go the extra mile and write tests for your application. 
-    Then provide examples on how to run them here.
     
     ## License
+    ${data.license}
     #MIT License
 
     Copyright (c) ${data.date} ${data.name}
@@ -82,7 +75,7 @@ function generateMarkdown(data) {
     ## Questions
     For any inquiries or questions about **${data.title}**, please contact:
     Email: ${data.email}
-    GitHub: (${data.gitHubUser})[${data.gitHubLink}]
+    GitHub: (${data.gitHubUser})[https://github.com/${data.gitHubUser}]
   `;
 }
 
