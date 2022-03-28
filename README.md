@@ -11,9 +11,10 @@ Quickly and easily generate a README file by using a command-line application to
 This is a ***Node.js application***, therefore you must have Node downloaded on your local PC. FOLLOW THIS LINK FOR A VIDEO WALKTHROUGH: [Install & Usage of Pro ReadMe.md Generator Video](https://).
 1. Download the repo onto your local device
 2. use the terminal to navigate to the directory (folder) that contains 'index.js'
-3. in ther terminal, run `$node index.js`
-4. follow the prompts on the command line
-5. locate your generated README.md file in the 'dist' directory (folder)
+3. run the command `$npm i` to download the node_modules required
+4. in the terminal, run `$node index.js`
+5. follow the prompts on the command line
+6. locate your generated README.md file in the 'dist' directory (folder)
 
 ## User-Story
 - [ ] AS A developer, I WANT a README generator, SO THAT I can quickly create a professional README for a new project.
