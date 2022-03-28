@@ -41,39 +41,39 @@ function renderLicenseSection(license) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
-    # ${data.title}
-    ${renderLicenseBadge(data.license)}
+  # ${data.title}
+  ${renderLicenseBadge(data.license)}
 
-    ## Description 
-    ${data.description}
-    
-    ## Table of Contents
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [Contributing](#contributing)
-    - [Tests](#tests)
-    - [License](#license)
-    - [Questions](#questions)
-    
-    ## Installation
-    ${data.installation}
-    
-    ## Usage
-    ${data.usage}
-    ![Usage Image](${data.usageImg})
-    
-    ## Contributing
-    @${data.collaborator}
-    
-    ## Tests
-    ${data.tests}
-    
-    ${renderLicenseSection(data.license)}
+  ## Description 
+  ${data.description}
+  
+  ## Table of Contents
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [License](#license)
+  - [Questions](#questions)
+  
+  ## Installation
+  ${data.installation}
+  
+  ## Usage
+  ${data.usage}
+  ![Usage Image](${data.usageImg})
+  
+  ## Contributing
+  @${data.collaborator}
+  
+  ## Tests
+  ${data.tests}
+  
+  ${renderLicenseSection(data.license)}
 
-    ## Questions
-    For any inquiries or questions about **${data.title}**, please contact:
-    Email: ${data.email}
-    GitHub: (${data.gitHubUser})[https://github.com/${data.gitHubUser}]
+  ## Questions
+  For any inquiries or questions about **${data.title}**, please contact:
+  Email: ${data.email}
+  GitHub: (${data.gitHubUser})[https://github.com/${data.gitHubUser}]
   `;
 }
 
