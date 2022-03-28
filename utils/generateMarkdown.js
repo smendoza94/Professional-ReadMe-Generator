@@ -16,7 +16,7 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license === 'MIT License') {
-    return 'https://choosealicense.com/licenses/mit/';
+    return `https://choosealicense.com/licenses/mit/`;
   } else if (license === 'Apache License 2.0') {
     return 'https://choosealicense.com/licenses/apache-2.0/';
   } else if (license === 'GNU General Public License v3.0') {
@@ -32,49 +32,49 @@ function renderLicenseSection(license) {
   if (!license) {
     return '';
   } else {
-    `## License
-      [${license}](${renderLicenseLink(license)});
-    `
+    return`
+## License
+[${license}](${renderLicenseLink(license)});`
   }
 }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `
-  # ${data.title}
-  ${renderLicenseBadge(data.license)}
+return `
+# ${data.title}
+${renderLicenseBadge(data.license[0])}
 
-  ## Description 
-  ${data.description}
-  
-  ## Table of Contents
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Contributing](#contributing)
-  - [Tests](#tests)
-  - [License](#license)
-  - [Questions](#questions)
-  
-  ## Installation
-  ${data.installation}
-  
-  ## Usage
-  ${data.usage}
-  ![Usage Image](${data.usageImg})
-  
-  ## Contributing
-  @${data.collaborator}
-  
-  ## Tests
-  ${data.tests}
-  
-  ${renderLicenseSection(data.license)}
+## Description 
+${data.description}
 
-  ## Questions
-  For any inquiries or questions about **${data.title}**, please contact:
-  Email: ${data.email}
-  GitHub: (${data.gitHubUser})[https://github.com/${data.gitHubUser}]
-  `;
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [License](#license)
+- [Questions](#questions)
+
+## Installation
+${data.installation}
+
+## Usage
+${data.usage}
+![Usage Image](${data.usageImg})
+
+## Contributing
+@${data.collaborator}
+
+## Tests
+${data.tests}
+
+${renderLicenseSection(data.license[0])}
+
+## Questions
+For any inquiries or questions about **${data.title}**, please contact:
+Email: ${data.email}
+GitHub: (${data.gitHubUser})[https://github.com/${data.gitHubUser}]
+`;
 }
 
 module.exports = generateMarkdown;

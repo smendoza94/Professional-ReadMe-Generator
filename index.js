@@ -74,7 +74,7 @@ const init = () => {
         {
             type: 'input',
             name: 'date',
-            message: 'What is the date your porject was published?'
+            message: 'What is the date your project was published?'
         },
         {
             type: 'input',
@@ -92,12 +92,13 @@ const init = () => {
             - What was your motivation?
             - Why did you build this project?
             - What problem does it solve?
-            - What did you learn?`,
+            - What did you learn?
+            `,
             validate: input => {
                 if(input) {
                     return true;
                 } else {
-                    console.log('Please enter your name!')
+                    console.log('Please enter a description!')
                 }
             }
         },
